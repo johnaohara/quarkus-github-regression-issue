@@ -1,0 +1,20 @@
+{
+  "id": "1",
+  "variable": {
+    "id": "1",
+    "testId": "1",
+    "name": "Test variable",
+    "group": "",
+    "order": 0,
+    "accessors": "",
+    "calculation": "",
+    "maxDifferenceLastDatapoint": 0.2,
+    "minWindow": 5,
+    "maxDifferenceFloatingWindow": 0.1,
+    "floatingWindow": 7
+  },
+  "runId": "100",
+  "timestamp": "2020-11-11T16:19:00.001Z",
+  "confirmed": false,
+  "description": "Random description that will be the basis of the regression text"
+}
