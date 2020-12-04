@@ -85,11 +85,11 @@ public class GithubApi {
                 }
             } else {
                 if (isOpen(issue)) {
-                    final GHIssueComment comment = issue.comment(messageFormatter.getStillFailingMsg(thisRepo, runId));
+                    final GHIssueComment comment = issue.comment(messageFormatter.getStillFailingMsg(thisRepo, runId, change.description));
                     LOGGER.info(String.format("Comment added on issue %s - %s", issue.getHtmlUrl().toString(), comment.getHtmlUrl().toString()));
                 } else {
                     issue.reopen();
-                    final GHIssueComment comment = issue.comment(messageFormatter.getFailedMsg(thisRepo, runId));
+                    final GHIssueComment comment = issue.comment(messageFormatter.getFailedMsg(thisRepo, runId, change.description));
                     LOGGER.info(String.format("Comment added on issue %s - %s, the issue has been re-opened", issue.getHtmlUrl().toString(), comment.getHtmlUrl().toString()));
                 }
             }

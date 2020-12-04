@@ -24,17 +24,19 @@ public class MessageFormatter {
                 .render();
     }
 
-    public String getFailedMsg(String repo, String runId){
+    public String getFailedMsg(String repo, String runId, String comment){
         return failedTemplate
                 .data("repo", repo)
                 .data("runId", runId)
+                .data("comment", comment)
                 .render();
     }
 
-    public String getStillFailingMsg(String repo, String runId){
+    public String getStillFailingMsg(String repo, String runId, String comment){
         return failedTemplate
                 .data("repo", repo)
                 .data("runId", runId)
+                .data("comment", comment)
                 .render();
     }
 
