@@ -1,17 +1,28 @@
-# github-regression-issue project
+# Quarkus Github Regression Issue
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Service to manage Quarkus Regression Issue [^1] 
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+This service will be registered as a Horreum [^2] webhook endpoint within a firewalled performance lab, and updates the Quarkus Github issue with results of regression analysis.   
 
-## Running the application in dev mode
+## Required Configuration
+
+
+## Running in OCP cluster
+
+
+
+## Running in standalone container
+
+## Development
+
+### Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
 ```
 
-## Packaging and running the application
+### Packaging and running the application
 
 The application can be packaged using:
 ```shell script
@@ -43,8 +54,7 @@ You can then execute your native executable with: `./target/github-regression-is
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
 
-# RESTEasy JAX-RS
-
-Guide: https://quarkus.io/guides/rest-json
 
 
+[^1]: https://github.com/quarkusio/quarkus/issues/-1
+[^2]: https://horreum.hyperfoil.io/
